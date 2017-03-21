@@ -117,61 +117,61 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_rfc'); ?>
-		<?php echo $form->textField($model,'documentacion_rfc'); ?>
+		<?php echo $form->checkBox($model,'documentacion_rfc'); ?>
 		<?php echo $form->error($model,'documentacion_rfc'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_identificacion'); ?>
-		<?php echo $form->textField($model,'documentacion_identificacion'); ?>
+		<?php echo $form->checkBox($model,'documentacion_identificacion'); ?>
 		<?php echo $form->error($model,'documentacion_identificacion'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_escri_constitucion'); ?>
-		<?php echo $form->textField($model,'documentacion_escri_constitucion'); ?>
+		<?php echo $form->checkBox($model,'documentacion_escri_constitucion'); ?>
 		<?php echo $form->error($model,'documentacion_escri_constitucion'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_escri_nombra_consejo'); ?>
-		<?php echo $form->textField($model,'documentacion_escri_nombra_consejo'); ?>
+		<?php echo $form->checkBox($model,'documentacion_escri_nombra_consejo'); ?>
 		<?php echo $form->error($model,'documentacion_escri_nombra_consejo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_escri_nombra_gerente'); ?>
-		<?php echo $form->textField($model,'documentacion_escri_nombra_gerente'); ?>
+		<?php echo $form->checkBox($model,'documentacion_escri_nombra_gerente'); ?>
 		<?php echo $form->error($model,'documentacion_escri_nombra_gerente'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_escri_nombra_apoderado'); ?>
-		<?php echo $form->textField($model,'documentacion_escri_nombra_apoderado'); ?>
+		<?php echo $form->checkBox($model,'documentacion_escri_nombra_apoderado'); ?>
 		<?php echo $form->error($model,'documentacion_escri_nombra_apoderado'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_acta_asamblea_aproba'); ?>
-		<?php echo $form->textField($model,'documentacion_acta_asamblea_aproba'); ?>
+		<?php echo $form->checkBox($model,'documentacion_acta_asamblea_aproba'); ?>
 		<?php echo $form->error($model,'documentacion_acta_asamblea_aproba'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_constancia_fondo'); ?>
-		<?php echo $form->textField($model,'documentacion_constancia_fondo'); ?>
+		<?php echo $form->checkBox($model,'documentacion_constancia_fondo'); ?>
 		<?php echo $form->error($model,'documentacion_constancia_fondo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_acta_asamblea'); ?>
-		<?php echo $form->textField($model,'documentacion_acta_asamblea'); ?>
+		<?php echo $form->checkBox($model,'documentacion_acta_asamblea'); ?>
 		<?php echo $form->error($model,'documentacion_acta_asamblea'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_estudio_viabilidad'); ?>
-		<?php echo $form->textField($model,'documentacion_estudio_viabilidad'); ?>
+		<?php echo $form->checkBox($model,'documentacion_estudio_viabilidad'); ?>
 		<?php echo $form->error($model,'documentacion_estudio_viabilidad'); ?>
 	</div>
 

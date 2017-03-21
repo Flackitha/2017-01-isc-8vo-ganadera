@@ -1,12 +1,13 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name . ' - About';
+$this->pageTitle=Yii::app()->name . ' - Acerca de';
 $this->breadcrumbs=array(
-	'About',
+	'Acerca de',
 );
 ?>
-<h1>About</h1>
+<h1>Acerca de</h1>
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <code><?php echo __FILE__; ?></code>.</p>
+<p>Este es un desarrollo de aplicación en proceso llevado a cabo por
+estudiantes de Octavo Semestre de la carrera de Ingeniería en Sistemas Computacionales,
+Generación 2013-2018.</p>

@@ -99,37 +99,37 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_rfc'); ?>
-		<?php echo $form->textField($model,'documentacion_rfc'); ?>
+		<?php echo $form->checkBox($model,'documentacion_rfc'); ?>
 		<?php echo $form->error($model,'documentacion_rfc'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_curp'); ?>
-		<?php echo $form->textField($model,'documentacion_curp'); ?>
+		<?php echo $form->checkBox($model,'documentacion_curp'); ?>
 		<?php echo $form->error($model,'documentacion_curp'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_identificacion'); ?>
-		<?php echo $form->textField($model,'documentacion_identificacion'); ?>
+		<?php echo $form->checkBox($model,'documentacion_identificacion'); ?>
 		<?php echo $form->error($model,'documentacion_identificacion'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_constancia_fondo'); ?>
-		<?php echo $form->textField($model,'documentacion_constancia_fondo'); ?>
+		<?php echo $form->checkBox($model,'documentacion_constancia_fondo'); ?>
 		<?php echo $form->error($model,'documentacion_constancia_fondo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_acta_asamblea'); ?>
-		<?php echo $form->textField($model,'documentacion_acta_asamblea'); ?>
+		<?php echo $form->checkBox($model,'documentacion_acta_asamblea'); ?>
 		<?php echo $form->error($model,'documentacion_acta_asamblea'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'documentacion_estudio_viabilidad'); ?>
-		<?php echo $form->textField($model,'documentacion_estudio_viabilidad'); ?>
+		<?php echo $form->checkBox($model,'documentacion_estudio_viabilidad'); ?>
 		<?php echo $form->error($model,'documentacion_estudio_viabilidad'); ?>
 	</div>
 

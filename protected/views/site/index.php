@@ -4,17 +4,18 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h1>Bienvenido al <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+<p>Este Sistema Web permitirá el registro y control de las Actas Emitidas en Asambleas
+	de la Unión Ganadera Regional.</p>
 
-<p>You may change the content of this page by modifying the following two files:</p>
+<p>Para iniciar con el uso del Sistema, acceda a la seguridad del mismo en la opción 
+	<?php echo CHtml::link('Acceso', array('/site/login')); ?></p>
+<p>Las opciones implementadas en este momento son:</p>
 <ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
+	<li><?php echo CHtml::link('Captura de Anexo 1-A (Alta de Personas Físicas)', array('/sociosPersonaFisica')); ?></li>
+	<li><?php echo CHtml::link('Captura de Anexo 1-B (Alta de Personas Morales)', array('/sociosPersonaMoral')); ?></li>
+	<li><?php echo CHtml::link('Captura de Conceptos de Actas', array('/conceptos')); ?></li>
+	<li><?php echo CHtml::link('Captura de Actas', array('/actas')); ?></li>
 </ul>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>

@@ -101,7 +101,7 @@ CREATE TABLE `tbl_miembros_sociedad` (
 -- Estructura de tabla para la tabla `tbl_persona_moral`
 --
 
-CREATE TABLE `tbl_persona_moral` (
+CREATE TABLE `tbl_socios_persona_moral` (
   `id` int(11) NOT NULL,
   `razonsocial` varchar(500) NOT NULL,
   `domicilio` varchar(180) NOT NULL,
@@ -226,7 +226,7 @@ ALTER TABLE `tbl_miembros_sociedad`
 --
 -- Indices de la tabla `tbl_persona_moral`
 --
-ALTER TABLE `tbl_persona_moral`
+ALTER TABLE `tbl_socios_persona_moral`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -272,7 +272,7 @@ ALTER TABLE `tbl_miembros_sociedad`
 --
 -- AUTO_INCREMENT de la tabla `tbl_persona_moral`
 --
-ALTER TABLE `tbl_persona_moral`
+ALTER TABLE `tbl_socios_persona_moral`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `tbl_socios_persona_fisica`
@@ -323,10 +323,10 @@ ALTER TABLE `tbl_conceptos_acta`
 -- Filtros para la tabla `tbl_consejo_sociedad`
 --
 ALTER TABLE `tbl_consejo_sociedad`
-  ADD CONSTRAINT `fk_persona_moral_consejo` FOREIGN KEY (`sociedad_id`) REFERENCES `tbl_persona_moral` (`id`);
+  ADD CONSTRAINT `fk_persona_moral_consejo` FOREIGN KEY (`sociedad_id`) REFERENCES `tbl_socios_persona_moral` (`id`);
 
 --
 -- Filtros para la tabla `tbl_miembros_sociedad`
 --
 ALTER TABLE `tbl_miembros_sociedad`
-  ADD CONSTRAINT `fk_persona_moral_miembros` FOREIGN KEY (`sociedad_id`) REFERENCES `tbl_persona_moral` (`id`);
+  ADD CONSTRAINT `fk_persona_moral_miembros` FOREIGN KEY (`sociedad_id`) REFERENCES `tbl_socios_persona_moral` (`id`);
