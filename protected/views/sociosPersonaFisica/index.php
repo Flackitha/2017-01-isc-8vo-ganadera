@@ -14,7 +14,12 @@ $this->menu=array(
 
 <h1>Socio Persona Fisicas</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+<?php $this->widget('zii.widgets.jui.CJuiAccordion',
+array(
+	'panels'=>array(
+		'2014'=>$this->renderPartial('_partial',array('anio'=>2014),true),
+		'2015'=>$this->renderPartial('_partial',array('anio'=>2015),true),
+		'2016'=>$this->renderPartial('_partial',array('anio'=>2016),true),
+	),
+));
+?>
