@@ -74,6 +74,7 @@ class SocioPersonaFisica extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'nombre' => 'Nombre:',
+			'apellidopaterno' => 'Apellido Paterno',
 			'domicilio' => 'Domicilio particular:',
 			'curp' => 'Clave Unica de Registro de Población (CURP):',
 			'rfc' => 'Registro Federal de Contribuyentes (RFC):',
@@ -88,9 +89,9 @@ class SocioPersonaFisica extends CActiveRecord
 			'estado' => 'Estado',
 			'documentacion_rfc' => 'Copia de la cédula de identificación fiscal (Registro Federal de Contribuyentes).',
 			'documentacion_curp' => 'Constancia de la CURP.',
-			'documentacion_identificacion' => 'Copia de identificación oficial del solicitante persona física (De preferencia credencial del elector, 
+			'documentacion_identificacion' => 'Copia de identificación oficial del solicitante persona física (De preferencia credencial del elector,
 			                                    pasaporte o cédula profesional',
-			'documentacion_constancia_fondo' => 'Original de la constancia expedida por el fondo de aseguramiento _________________, en la que se describe los servicios de 
+			'documentacion_constancia_fondo' => 'Original de la constancia expedida por el fondo de aseguramiento _________________, en la que se describe los servicios de
 			                                     aseguramiento que no puede otorgarme y las razones de esa imposibilidad, en su caso.',
 			'documentacion_acta_asamblea' => 'Copia del acta de la Asamblea General del Fondo de Aseguramiento ________________________, en la que se acordo mi separación
 			                                  como socio; ó, en su defecto, el original del acuse de la solicitud de separación recibida por el Fondos

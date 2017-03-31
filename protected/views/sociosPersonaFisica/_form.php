@@ -25,6 +25,14 @@
 		<?php echo $form->error($model,'nombre'); ?>
 	</div>
 
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'apellidopaterno'); ?>
+		<?php echo $form->textField($model,'apellidopaterno',array('size'=>60,'maxlength'=>180)); ?>
+		<?php echo $form->error($model,'apellidopaterno'); ?>
+	</div>
+
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'domicilio'); ?>
 		<?php echo $form->textField($model,'domicilio',array('size'=>60,'maxlength'=>180)); ?>
