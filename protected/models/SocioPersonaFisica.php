@@ -73,9 +73,10 @@ class SocioPersonaFisica extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nombre' => 'Nombre:',
+			'nombre' => '1. Nombre:',
 			'apellidopaterno' => 'Apellido Paterno',
-			'domicilio' => 'Domicilio particular:',
+			'apellidomaterno' => 'Apellido Materno',
+			'domicilio' => '2. Domicilio particular:',
 			'curp' => 'Clave Unica de Registro de Población (CURP):',
 			'rfc' => 'Registro Federal de Contribuyentes (RFC):',
 			'actividades' => 'Naturaleza de las Actividades:',
@@ -89,15 +90,15 @@ class SocioPersonaFisica extends CActiveRecord
 			'estado' => 'Estado',
 			'documentacion_rfc' => 'Copia de la cédula de identificación fiscal (Registro Federal de Contribuyentes).',
 			'documentacion_curp' => 'Constancia de la CURP.',
-			'documentacion_identificacion' => 'Copia de identificación oficial del solicitante persona física (De preferencia credencial del elector,
-			                                    pasaporte o cédula profesional',
+			'documentacion_identificacion' => 'Copia de identificacion oficial del solicitante persona física (De preferencia credencial del elector,
+			                                    pasaporte o cedula profesional',
 			'documentacion_constancia_fondo' => 'Original de la constancia expedida por el fondo de aseguramiento _________________, en la que se describe los servicios de
 			                                     aseguramiento que no puede otorgarme y las razones de esa imposibilidad, en su caso.',
 			'documentacion_acta_asamblea' => 'Copia del acta de la Asamblea General del Fondo de Aseguramiento ________________________, en la que se acordo mi separación
 			                                  como socio; ó, en su defecto, el original del acuse de la solicitud de separación recibida por el Fondos
 											  de Aseguramiento ______________________.',
 			'documentacion_estudio_viabilidad' => 'Estudio de viabilidad técnico-económico por cultivo o especie ganadera, en su caso, en el que se precisan los
-			                                       indices de indemnizaciones de los últimos cinco años, asi como la información necesaria para determinar 
+			                                       indices de indemnizaciones de los últimos cinco años, asi como la información necesaria para determinar
 												   mi admisión como socio.',
 		);
 	}
@@ -122,7 +123,9 @@ class SocioPersonaFisica extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('domicilio',$this->domicilio,true);
+		$criteria->compare('apellidopaterno',$this->apellidopaterno,true);
+		$criteria->compare('apellidomaterno',$this->apellidomaterno,true);
+                $criteria->compare('domicilio',$this->domicilio,true);
 		$criteria->compare('curp',$this->curp,true);
 		$criteria->compare('rfc',$this->rfc,true);
 		$criteria->compare('actividades',$this->actividades,true);

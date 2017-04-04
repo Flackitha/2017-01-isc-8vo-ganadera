@@ -17,7 +17,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View SocioPersonaFisica #<?php echo $model->id; ?></h1>
+<h1>Ver Socios Personas Fisicas #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

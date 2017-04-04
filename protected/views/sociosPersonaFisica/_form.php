@@ -34,6 +34,13 @@
 
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'apellidomaterno'); ?>
+		<?php echo $form->textField($model,'apellidomaterno',array('size'=>60,'maxlength'=>180)); ?>
+		<?php echo $form->error($model,'apellidomaterno'); ?>
+	</div>
+
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'domicilio'); ?>
 		<?php echo $form->textField($model,'domicilio',array('size'=>60,'maxlength'=>180)); ?>
 		<?php echo $form->error($model,'domicilio'); ?>
@@ -49,12 +56,6 @@
 		<?php echo $form->labelEx($model,'rfc'); ?>
 		<?php echo $form->textField($model,'rfc',array('size'=>60,'maxlength'=>180)); ?>
 		<?php echo $form->error($model,'rfc'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'actividades'); ?>
-		<?php echo $form->textField($model,'actividades',array('size'=>60,'maxlength'=>500)); ?>
-		<?php echo $form->error($model,'actividades'); ?>
 	</div>
 
 	<div class="row">
@@ -103,6 +104,22 @@
 		<?php echo $form->labelEx($model,'estado'); ?>
 		<?php echo $form->textField($model,'estado',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'estado'); ?>
+	</div>
+
+
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'actividades'); ?>
+		<?php echo $form->textField($model,'actividades',array('size'=>60,'maxlength'=>180)); ?>
+		<?php echo $form->error($model,'actividades'); ?>
+	</div>
+
+
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'opcion'); ?>
+		<?php echo $form->radioButton($model,'opcion', array ('1','2')); ?>
+		<?php echo $form->error($model,'opcion'); ?>
 	</div>
 
 	<div class="row">

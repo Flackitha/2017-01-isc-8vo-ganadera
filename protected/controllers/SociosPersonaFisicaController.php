@@ -63,8 +63,10 @@ class SociosPersonaFisicaController extends Controller
 	public function actionCreate()
 	{
 		$model=new SocioPersonaFisica;
-
-		// Uncomment the following line if AJAX validation is needed
+                $model-> ciudad="Escarcega";
+                $model-> estado='Campeche';
+		$model-> actividades='Ganadera';
+                // Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['SocioPersonaFisica']))
